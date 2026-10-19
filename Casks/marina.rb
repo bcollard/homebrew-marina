@@ -2,15 +2,15 @@
 cask "marina" do
   binary "marina", target: "klimax"
 
-  version "0.3.3"
+  version "0.3.4"
 
   on_macos do
     on_arm do
-      sha256 "5e9052eef9e533924baf2d7d4dbc20c5149b58a269ce263c90560f1eea2aadb4"
+      sha256 "694c5c3e2332f08c9ce6772ef659689b9d4ed2bd54972b04da2e89845643f033"
       url "https://github.com/bcollard/marina/releases/download/v#{version}/marina_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "307b73ce6c9c1750e0db7f2ea132ac007434ee77cb2d3e171b8116adb3a0b98a"
+      sha256 "88e145784649434c748954f9bbe31a8b3ec0099fa200a403ad1ea31cac447eae"
       url "https://github.com/bcollard/marina/releases/download/v#{version}/marina_#{version}_darwin_amd64.tar.gz"
     end
   end
