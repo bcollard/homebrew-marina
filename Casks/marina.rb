@@ -2,15 +2,15 @@
 cask "marina" do
   binary "marina", target: "klimax"
 
-  version "0.3.7"
+  version "0.3.8"
 
   on_macos do
     on_arm do
-      sha256 "7ca0794671945c82137711358fbf00eb55236cb36b04c51e78b866002a62f88a"
+      sha256 "bd79a634ea4670e274e7988b319884b6a89e4586f346cae0386021490727dc45"
       url "https://github.com/bcollard/marina/releases/download/v#{version}/marina_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "957b78ffeb5e1305f56051652ed8ff9239e517772336c7a510b4699130198755"
+      sha256 "f001676858d3b4b01f3f08a7467c3440b4a0432d52d6e5b335c464e77a1f5208"
       url "https://github.com/bcollard/marina/releases/download/v#{version}/marina_#{version}_darwin_amd64.tar.gz"
     end
   end
@@ -26,7 +26,7 @@ cask "marina" do
 
   binary "marina"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     Coming from klimax? Run `marina migrate` once: it moves ~/.klimax (config,
