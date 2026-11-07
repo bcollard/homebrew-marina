@@ -1,6 +1,6 @@
 cask "marina-ui" do
-  version "0.5.1"
-  sha256 "4cb0ffda353cc8fe31f12f42e02d56787913b4eba9d60575d040cf7691c05059"
+  version "0.5.2"
+  sha256 "b00d3626710be33073115e395d2a34958f0892d1272d79f8c233b88dea19cce1"
 
   url "https://github.com/bcollard/marina-ui/releases/download/v#{version}/MarinaUI.dmg"
   name "Marina"
